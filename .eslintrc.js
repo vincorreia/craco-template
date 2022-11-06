@@ -7,9 +7,10 @@ module.exports = {
 		'eslint:recommended',
 		'plugin:react/recommended',
 		'plugin:react/jsx-runtime',
-		'standard',
+		'standard-with-typescript',
 		'plugin:prettier/recommended'
 	],
+	parser: '@typescript-eslint/parser',
 	parserOptions: {
 		ecmaFeatures: {
 			jsx: true
@@ -17,9 +18,8 @@ module.exports = {
 		ecmaVersion: 'latest',
 		sourceType: 'module'
 	},
-	plugins: ['react', 'react-hooks'],
+	plugins: ['react', 'react-hooks', '@typescript-eslint'],
 	rules: {
-		'no-unused-vars': 'warn',
-		'import/export': 'off'
+		'no-unused-vars': 'warn'
 	}
 }
