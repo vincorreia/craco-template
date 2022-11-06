@@ -17,10 +17,12 @@ module.exports = {
 		},
 		ecmaVersion: 'latest',
 		sourceType: 'module',
-		project: 'tsconfig.json'
+		project: 'tsconfig.eslint.json'
 	},
 	plugins: ['react', 'react-hooks', '@typescript-eslint'],
 	rules: {
-		'no-unused-vars': 'warn'
+		'no-unused-vars': 'warn',
+		'@typescript-eslint/explicit-function-return-type': 'off',
+		'@typescript-eslint/no-unused-vars': 'warn'
 	}
 }
