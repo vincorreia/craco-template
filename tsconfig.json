@@ -1,6 +1,5 @@
 {
 	"compilerOptions": {
-		"baseUrl": "src",
 		"target": "es5",
 		"lib": ["dom", "dom.iterable", "esnext"],
 		"allowJs": true,
@@ -17,5 +16,6 @@
 		"noEmit": true,
 		"jsx": "react-jsx"
 	},
-	"include": ["src"]
+	"include": ["src", "craco.config.js"],
+	"extends": "./tsconfig.paths.json"
 }
